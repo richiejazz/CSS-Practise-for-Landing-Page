@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: 'Poppins', sans-serif;
+
+}
+.hero {
+    height: 100vh;
+    background: url(./image/abstract_background.jpg)center center/ cover no-repeat;
+
+}
+  /* navbar section */
+
+
+.navbar {
+    height: 70px;
+    /* border-bottom: 3px solid black; */
+    background-color: rgb(138, 43, 226, 0.3);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+span {
+    font-size: small;
+    cursor: pointer;
+
+    
+
+}
+h2, h4 {
+    display: inline-block;
+
+}
+
+
+.icons {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    gap: 15px;
+}
+
+.line{
+    width: 120px;
+    height: 1px;
+    background-color: rgb(255, 254, 254);
+}
+/* main section */
+
+.hero-title{
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 500px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+/* Yellow button */
+.btn-primary{
+    background: #ffb347;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Outline button */
+.btn-outline{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    opacity: 0.9;
+}
+
+.btn-outline:hover{
+    background: white;
+    color: purple;
+}
+
+.hero-controls{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.circle-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero-footer{
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.footer-box{
+    width: 150px;
+}
+
+.footer-box h4{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-box p{
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.footer-text{
+    max-width: 400px;
+    font-size: 12px;
+    line-height: 1.5;
+}
