@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura by Your Brand | Landing Page Concept</title>
+    <meta name="description" content="A landing page concept for Aura, a fictional ambient lamp. Designed and built with semantic HTML and modern CSS by Richiejazz.">
+    <meta name="theme-color" content="#12081f">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e04bef'/%3E%3Cstop offset='1' stop-color='%236a0dad'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23fff' text-anchor='middle'%3EYB%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap">
+    <link rel="preload" as="image" href="image/abstract_background.jpg">
+    <link rel="stylesheet" href="project.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- header / navbar -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="Your Brand, back to top">
+                <span class="brand-mark" aria-hidden="true">YB</span>
+                <span class="brand-name">Your Brand</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+                <span class="visually-hidden">Menu</span>
+            </button>
+
+            <nav id="site-nav" class="site-nav" aria-label="Main">
+                <ul class="nav-list">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#support">Customer Service</a></li>
+                </ul>
+                <a class="btn btn-primary btn-small" href="#product">Get Aura</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- hero section -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p class="eyebrow">Introducing Aura</p>
+                    <h1 class="hero-title" id="hero-title">Light that moves with your mood.</h1>
+                    <p class="hero-lead">
+                        Aura is an ambient lamp that drifts from deep violet to warm coral to
+                        cool lagoon blue, so every room feels the way you want it to.
+                    </p>
+                    <div class="hero-buttons">
+                        <a class="btn btn-primary" href="#product">Explore Aura</a>
+                        <a class="btn btn-outline" href="#gallery">See the scenes</a>
+                    </div>
+                </div>
+
+                <ul class="hero-highlights" aria-label="Highlights">
+                    <li class="highlight">
+                        <h2>Adaptive colour</h2>
+                        <p>Scenes shift gradually through the day instead of switching abruptly.</p>
+                    </li>
+                    <li class="highlight">
+                        <h2>Soft, even glow</h2>
+                        <p>A diffused shade spreads light without harsh hotspots.</p>
+                    </li>
+                    <li class="highlight">
+                        <h2>Simple controls</h2>
+                        <p>One dial on the lamp, or a few taps in the companion app.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <div class="container about-grid">
+                <div class="about-visual reveal" aria-hidden="true">
+                    <div class="orb">
+                        <div class="orb-core"></div>
+                    </div>
+                </div>
+
+                <div class="about-copy reveal">
+                    <p class="eyebrow">About</p>
+                    <h2 class="section-title" id="about-title">Designed around how light makes you feel.</h2>
+                    <p class="section-lead">
+                        Most lamps are either on or off. Aura treats light as atmosphere: a calm
+                        backdrop for working, winding down, or having friends over.
+                    </p>
+
+                    <ol class="principles">
+                        <li>
+                            <h3>Calm</h3>
+                            <p>Colours blend slowly, so changes feel natural rather than distracting.</p>
+                        </li>
+                        <li>
+                            <h3>Considered</h3>
+                            <p>A minimal form that sits quietly on a desk, shelf or bedside table.</p>
+                        </li>
+                        <li>
+                            <h3>Personal</h3>
+                            <p>Save your favourite scenes and return to them with a single turn.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- gallery section -->
+        <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">Gallery</p>
+                        <h2 class="section-title" id="gallery-title">Five scenes, one lamp.</h2>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="circle-btn" type="button" data-carousel="prev" aria-controls="scene-track" aria-label="Previous scene">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                        <button class="circle-btn" type="button" data-carousel="next" aria-controls="scene-track" aria-label="Next scene">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="scene-track" id="scene-track" tabindex="0" aria-label="Light scenes">
+                <li class="scene scene-dusk">
+                    <div class="scene-art" aria-hidden="true"></div>
+                    <div class="scene-body">
+                        <h3>Dusk</h3>
+                        <p>Deep violet for slow evenings and low conversation.</p>
+                    </div>
+                </li>
+                <li class="scene scene-coral">
+                    <div class="scene-art" aria-hidden="true"></div>
+                    <div class="scene-body">
+                        <h3>Coral</h3>
+                        <p>A warm, sunset tone that softens a room after dark.</p>
+                    </div>
+                </li>
+                <li class="scene scene-lagoon">
+                    <div class="scene-art" aria-hidden="true"></div>
+                    <div class="scene-body">
+                        <h3>Lagoon</h3>
+                        <p>Cool blue light for focused work and clear thinking.</p>
+                    </div>
+                </li>
+                <li class="scene scene-bloom">
+                    <div class="scene-art" aria-hidden="true"></div>
+                    <div class="scene-body">
+                        <h3>Bloom</h3>
+                        <p>Bright magenta for music, guests and a little energy.</p>
+                    </div>
+                </li>
+                <li class="scene scene-midnight">
+                    <div class="scene-art" aria-hidden="true"></div>
+                    <div class="scene-body">
+                        <h3>Midnight</h3>
+                        <p>A dim indigo glow that is gentle enough to sleep beside.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- product section -->
+        <section class="section product" id="product" aria-labelledby="product-title">
+            <div class="container">
+                <article class="product-card reveal">
+                    <div class="product-media" aria-hidden="true">
+                        <div class="lamp">
+                            <div class="lamp-glow"></div>
+                            <div class="lamp-shade"></div>
+                            <div class="lamp-base"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-copy">
+                        <p class="eyebrow">Product</p>
+                        <h2 class="section-title" id="product-title">Aura Lamp</h2>
+                        <p class="section-lead">
+                            Everything you need for a calmer space, in one compact piece.
+                        </p>
+
+                        <ul class="feature-list">
+                            <li>Five built-in scenes, plus your own custom colours</li>
+                            <li>Physical dial for brightness and scene changes</li>
+                            <li>Companion app with gentle sunrise and wind-down timers</li>
+                            <li>Frosted shade on a solid, weighted base</li>
+                        </ul>
+
+                        <div class="product-actions">
+                            <a class="btn btn-primary" href="#support">Ask about availability</a>
+                            <a class="btn btn-ghost" href="#gallery">Browse scenes</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- customer service section -->
+        <section class="section support" id="support" aria-labelledby="support-title">
+            <div class="container support-grid">
+                <div class="support-intro reveal">
+                    <p class="eyebrow">Customer Service</p>
+                    <h2 class="section-title" id="support-title">Questions? We're here to help.</h2>
+                    <p class="section-lead">
+                        Find quick answers below, or get in touch and a member of the team will reply.
+                    </p>
+                    <div class="contact-card">
+                        <h3>Contact support</h3>
+                        <p>Email us any time. We usually reply within one working day.</p>
+                        <a class="btn btn-outline" href="mailto:hello@yourbrand.example">hello@yourbrand.example</a>
+                    </div>
+                </div>
+
+                <div class="faq reveal">
+                    <details class="faq-item" open>
+                        <summary>Do I need the app to use Aura?</summary>
+                        <p>No. The dial on the lamp switches scenes and adjusts brightness. The app adds custom colours and timers.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I create my own scenes?</summary>
+                        <p>Yes. Pick any colour in the app, set the brightness, and save it to the dial alongside the built-in scenes.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is the light comfortable for evenings?</summary>
+                        <p>Scenes like Dusk and Midnight are designed to be dim and warm, and the wind-down timer fades the light out gradually.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do I care for the shade?</summary>
+                        <p>Wipe it with a soft, dry cloth. Avoid solvents or abrasive cleaners, which can mark the frosted finish.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="#top" aria-label="Your Brand, back to top">
+                    <span class="brand-mark" aria-hidden="true">YB</span>
+                    <span class="brand-name">Your Brand</span>
+                </a>
+                <p>Thoughtful lighting for calmer, more personal spaces.</p>
+            </div>
+
+            <nav class="footer-col" aria-label="Explore">
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#product">Product</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-col" aria-label="Help">
+                <h2>Help</h2>
+                <ul>
+                    <li><a href="#support">FAQ</a></li>
+                    <li><a href="mailto:hello@yourbrand.example">Email support</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>
+                Concept design: Your Brand and Aura are fictional. Designed and built with HTML &amp; CSS by
+                <a href="https://richiejazz.com">Richiejazz</a>.
+            </p>
+            <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+</body>
+</html>
